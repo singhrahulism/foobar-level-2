@@ -31,10 +31,10 @@ def solution(src,dest) :
 def possibleMoves(pos) :
     y = int(int(pos/8)+1)
     x = int(pos-(8*(y-1))+1)
-    lstCoor = [[x-1, y-2], [x+1, y-2], [x-2, y-1], [x+2, y-1], [x-2, y+1], [x+2, y+1], [x-1, y+2], [x1, y2]]
+    lstCoor = [[x-1, y-2], [x+1, y-2], [x-2, y-1], [x+2, y-1], [x-2, y+1], [x+2, y+1], [x-1, y+2], [x+1, y+2]]
     lstPos = []
     totalMoves = int(0)
-    for i in range(0, 8) 
+    for i in range(0, 8) :
         for j in range(0, 2) :
             if lstCoor[totalMoves][j] < 1 or lstCoor[totalMoves][j] > 8 :
                 lstCoor.pop(totalMoves)
